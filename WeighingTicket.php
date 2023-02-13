@@ -96,4 +96,12 @@ class WeighingTicket{
     {
         $this->price = $this->pricePerKilogram / 1000 * $this->weight;
     }
+    /**
+     * deffini un poid aleatoir entre 0 et 5000
+     */
+    public function weighing () : void
+    {
+        $pds = rand(0,5000);
+        $this->setWeight($pds);
+    }
 }

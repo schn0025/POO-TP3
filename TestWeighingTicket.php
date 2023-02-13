@@ -23,3 +23,10 @@ echo $inconnu->setArticleName('kiwi');
 echo $inconnu->setPricePerKilogram(3.5);
 echo $inconnu->setWeight(1050);
 echo $inconnu->getPrice(),"\n";
+
+// question 6
+echo "\nquestion 6 \n";
+echo $concombre->getWeight(),"av modif\n";
+$concombre->weighing();
+echo $concombre->getWeight(),"\n";
+
