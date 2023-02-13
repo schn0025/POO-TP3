@@ -1,55 +1,55 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Person",
-            "name": "Person",
+            "fqsen": "\\WeighingTicket",
+            "name": "WeighingTicket",
             "summary": "",
-            "url": "classes/Person.html"
+            "url": "classes/WeighingTicket.html"
         },                {
-            "fqsen": "\\Person\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\WeighingTicket\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructeur\u0020de\u0020la\u0020classe\u0020Person.\u0020Ce\u0020constructeur\u0020permet\u0020d\u2019affecter\u0020un\u0020nom,\u0020un\u0020pr\u00E9nom\net\u0020un\u0020age\u0020\u00E0\u0020une\u0020personne.\u0020Lorsque\u0020ces\u0020caract\u00E9ritiques\u0020ne\u0020sont\u0020pas\u0020renseign\u00E9es\u0020lors\u0020de\nl\u2019appel\u0020du\u0020contructeur,\u0020la\u0020personne\u0020aura\u0020pour\u0020nom\u0020\u0022Doe\u0022,\u0020pr\u00E9nom\u0020\u0022John\u0022\u0020et\u0020age\u00200.",
-            "url": "classes/Person.html#method___construct"
+            "summary": "constructeur\u0020de\u0020la\u0020classe\u0020WeighingTicket,\u0020permet\u0020d\u0027afecte\u0020un\u0020nom\u0020d\u0027article,\u0020un\u0020prix\nau\u0020kilo\u0020ainsi\u0020qu\u0027un\u0020poids\u0020a\u0020un\u0020tiket.\u0020Lorsque\u0020ces\u0020caract\u00E9ritiques\u0020ne\u0020sont\u0020pas\u0020renseign\u00E9es\u0020lors\u0020de\nl\u2019appel\u0020du\u0020contructeur,\u0020le\u0020tiket\u0020auras\u0020pour\u0020nom\u0020d\u0027article\u0020\u0022Unknown\u0022,\u0020pour\u0020prix\u0020au\u0020kilo\u00200\net\u0020pour\u0020poids\u00200.",
+            "url": "classes/WeighingTicket.html#method___construct"
         },                {
-            "fqsen": "\\Person\u003A\u003Aprint\u0028\u0029",
-            "name": "print",
-            "summary": "affiche\u0020les\u0020elt\u0020de\u0020l\u0027objet",
-            "url": "classes/Person.html#method_print"
+            "fqsen": "\\WeighingTicket\u003A\u003AgetArticleName\u0028\u0029",
+            "name": "getArticleName",
+            "summary": "accesseur\u0020au\u0020nom\u0020de\u0020l\u0027article,\u0020renvoi\u0020le\u0020nom\u0020de\u0020l\u0027article\u0020avec\u0020une\u0020chaine\u0020de\u0020caractaire",
+            "url": "classes/WeighingTicket.html#method_getArticleName"
         },                {
-            "fqsen": "\\Person\u003A\u003AgetLastName\u0028\u0029",
-            "name": "getLastName",
-            "summary": "Accesseur\u0020au\u0020nom\u0020de\u0020la\u0020personne.\u0020Retourne\u0020la\u0020valeur\u0020du\u0020nom\u0020sous\u0020forme\u0020de\u0020cha\u00EEne\u0020de\ncaract\u00E9res.",
-            "url": "classes/Person.html#method_getLastName"
+            "fqsen": "\\WeighingTicket\u003A\u003AgetPricePerKilogram\u0028\u0029",
+            "name": "getPricePerKilogram",
+            "summary": "accesseur\u0020au\u0020Prix\u0020au\u0020kilo\u0020de\u0020l\u0027article,\u0020renvoi\u0020le\u0020prix\u0020au\u0020kilo\u0020de\u0020l\u0027aricle\u0020avec\u0020un\u0020r\u00E9el",
+            "url": "classes/WeighingTicket.html#method_getPricePerKilogram"
         },                {
-            "fqsen": "\\Person\u003A\u003AgetFirstName\u0028\u0029",
-            "name": "getFirstName",
-            "summary": "Accesseur\u0020au\u0020pr\u00E9nom\u0020de\u0020la\u0020personne.\u0020Retourne\u0020la\u0020valeur\u0020du\u0020pr\u00E9nom\u0020sous\u0020forme\u0020de\u0020cha\u00EEne\u0020de\ncaract\u00E9res.",
-            "url": "classes/Person.html#method_getFirstName"
+            "fqsen": "\\WeighingTicket\u003A\u003AgetWeight\u0028\u0029",
+            "name": "getWeight",
+            "summary": "accesser\u0020au\u0020poids\u0020de\u0020l\u0027article,\u0020renvoi\u0020le\u0020poids\u0020de\u0020l\u0027article\u0020avec\u0020un\u0020entier",
+            "url": "classes/WeighingTicket.html#method_getWeight"
         },                {
-            "fqsen": "\\Person\u003A\u003AgetAge\u0028\u0029",
-            "name": "getAge",
-            "summary": "Accesseur\u0020a\u0020l\u0027age\u0020de\u0020la\u0020personne.\u0020Retourne\u0020la\u0020valeur\u0020de\u0020l\u0027age\u0020sous\u0020forme\u0020d\u0027un\u0020entier.",
-            "url": "classes/Person.html#method_getAge"
+            "fqsen": "\\WeighingTicket\u003A\u003AgetPrice\u0028\u0029",
+            "name": "getPrice",
+            "summary": "accesseur\u0020au\u0020prix\u0020de\u0020l\u0027article,\u0020renvois\u0020le\u0020pris\u0020de\u0020l\u0027article\u0020avec\u0020un\u0020r\u00E9el",
+            "url": "classes/WeighingTicket.html#method_getPrice"
         },                {
-            "fqsen": "\\Person\u003A\u003AsetAge\u0028\u0029",
-            "name": "setAge",
-            "summary": "modificateur\u0020de\u0020l\u0027age\u0020de\u0020la\u0020perssone.\u0020Ne\u0020retourne\u0020rien,\u0020modifie\u0020la\u0020valeur\u0020age\u0020de\u0020la\u0020personne.",
-            "url": "classes/Person.html#method_setAge"
+            "fqsen": "\\WeighingTicket\u003A\u003AsetArticleName\u0028\u0029",
+            "name": "setArticleName",
+            "summary": "modificateurs\u0020du\u0020nom\u0020de\u0020l\u0027article,\u0020modifie\u0020l\u0027article\u0020avec\u0020le\u0020nom\u0020passer\u0020en\u0020parametre",
+            "url": "classes/WeighingTicket.html#method_setArticleName"
         },                {
-            "fqsen": "\\Person\u003A\u003AsetFirstName\u0028\u0029",
-            "name": "setFirstName",
-            "summary": "modificateur\u0020du\u0020prenom\u0020de\u0020la\u0020personne.\u0020Ne\u0020retourne\u0020rien,\u0020modifie\u0020la\u0020valeur\u0020du\u0020prenom\nde\u0020la\u0020personne",
-            "url": "classes/Person.html#method_setFirstName"
+            "fqsen": "\\WeighingTicket\u003A\u003AsetPricePerKilogram\u0028\u0029",
+            "name": "setPricePerKilogram",
+            "summary": "modificateur\u0020du\u0020prix\u0020au\u0020kilo\u0020du\u0020produit,\u0020modifie\u0020le\u0020prix\u0020au\u0020kilo\u0020du\u0020produit\net\u0020remet\u0020a\u0020jour\u0020de\u0020prix",
+            "url": "classes/WeighingTicket.html#method_setPricePerKilogram"
         },                {
-            "fqsen": "\\Person\u003A\u003AsetLastName\u0028\u0029",
-            "name": "setLastName",
-            "summary": "modificateur\u0020du\u0020nom\u0020de\u0020la\u0020personne.\u0020Ne\u0020retourn\u0020rien,\u0020modifie\u0020la\u0020valeur\u0020du\u0020le\u0020nom\nde\u0020la\u0020personne",
-            "url": "classes/Person.html#method_setLastName"
+            "fqsen": "\\WeighingTicket\u003A\u003AsetWeight\u0028\u0029",
+            "name": "setWeight",
+            "summary": "modificateur\u0020du\u0020poids\u0020du\u0020produit,\u0020modifie\u0020le\u0020poids\u0020du\u0020produit\u0020et\u0020met\u0020\u00E0\u0020jour\u0020son\u0020prix",
+            "url": "classes/WeighingTicket.html#method_setWeight"
         },                {
-            "fqsen": "\\Person\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "donne\u0020la\u0020facon\u0020d\u0027interpreter\u0020une\u0020personne\u0020en\u0020type\u0020string.",
-            "url": "classes/Person.html#method___toString"
+            "fqsen": "\\WeighingTicket\u003A\u003Aweighing\u0028\u0029",
+            "name": "weighing",
+            "summary": "deffini\u0020un\u0020poid\u0020aleatoir\u0020entre\u00200\u0020et\u00205000",
+            "url": "classes/WeighingTicket.html#method_weighing"
         },                {
             "fqsen": "\\",
             "name": "\\",
