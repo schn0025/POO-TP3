@@ -1,0 +1,6 @@
+question 8
+La 3eme facon de crée un objet est $point = new Point(0.5);
+Le défaut de cette appel est que l'on ne c'est pas ci l'att y n'ets pas def ou ci il est initialisr a 0.
+
+question 15
+La methode getStart permet de modiffier car elle nous renvois l'espace memoir de son point de debut.
