@@ -5,6 +5,16 @@ declare(strict_types = 1);
 require_once "Point.php";
 require_once "Segment.php";
 
+
+// fonction d'autre ex
+function decodeBooleen(bool $boul): string
+{
+    $rep = "Faux";
+    if ($boul)
+        $rep = "Vrai";
+    return $rep;
+}
+
 // question 8
 echo "question 8\n";
 $null = new Point;
@@ -43,15 +53,6 @@ echo "\nquestion 15\n";
 echo $segment1,"\n";
 $segment1->getStart()->translation(10, 10);
 echo $segment1,"\n";
-
-// fonction d'autre ex
-function decodeBooleen(bool $boul): string
-{
-    $rep = "Faux";
-    if ($boul)
-        $rep = "Vrai";
-    return $rep;
-}
 
 // question 16
 echo "\nquestion 16\n";
