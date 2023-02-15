@@ -44,6 +44,15 @@ echo $segment1,"\n";
 $segment1->getStart()->translation(10, 10);
 echo $segment1,"\n";
 
+// fonction d'autre ex
+function decodeBooleen(bool $boul): string
+{
+    $rep = "Faux";
+    if ($boul)
+        $rep = "Vrai";
+    return $rep;
+}
+
 // question 16
 echo "\nquestion 16\n";
 echo "av modif $segment1 \n";
@@ -56,17 +65,33 @@ echo " appres modification $segment1\n";
 
 // question 17
 echo "\nquestion 17\n";
+echo $segment1,"\n";
+$segment1->translation(10,10);
+echo $segment1,"\n";
 
-/*
 // question 18
 echo "\nquestion 18\n";
+echo $segment1->getLength(),"\n";
 
 // question 19
 echo "\nquestion 19\n";
+$point2 = new Point;
+$point3 = new Point(1, 1);
+$segment2 = new Segment( $null , $point1);
+$segment3 = new Segment( $point2, $point3);
+echo decodeBooleen($segment1->isLongerThan($segment2)),"\n";
+echo decodeBooleen($segment1->isLongerThan($segment3)),"\n";
+
 
 // question 20
 echo "\nquestion 20\n";
+echo decodeBooleen($segment1->isEqual($segment2)),"\n";
+echo decodeBooleen($segment1->isEqual($segment1)),"\n";
 
 // question 21
 echo "\nquestion 21\n";
-*/
+$clonS1 = clone $segment1;
+echo $clonS1,"\n";
+$clonS1->translation(10,10);
+echo "seg 1 $segment1 \n";
+echo "clone $clonS1 \n";

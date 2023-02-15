@@ -81,7 +81,7 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Person
+    Segment
 
     
             <div class="phpdocumentor-element__package">
@@ -95,9 +95,9 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5</span>
+    <span class="phpdocumentor-element-found-in__line">7</span>
 
     </aside>
 
@@ -118,73 +118,69 @@
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method___construct">__construct()</a>
+    <a href="classes/Segment.html#method___clone">__clone()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Constructeur de la classe Person. Ce constructeur permet d’affecter un nom, un prénom
-et un age à une personne. Lorsque ces caractéritiques ne sont pas renseignées lors de
-l’appel du contructeur, la personne aura pour nom &quot;Doe&quot;, prénom &quot;John&quot; et age 0.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method___toString">__toString()</a>
+    <a href="classes/Segment.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>constructeur de la classe Segment. il attibut les valeur des argument passer en
+parametre au attrubut strat et end.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Segment.html#method___toString">__toString()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>donne la facon d&#039;interpreter une personne en type string.</dd>
+<dd>__toString indique comment interpreter l&#039;instance de Segement l&#039;orcequ&#039;il est
+appeler au format string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_getAge">getAge()</a>
+    <a href="classes/Segment.html#method_getLength">getLength()</a>
     <span>
-                                &nbsp;: int    </span>
+                                &nbsp;: float    </span>
 </dt>
-<dd>Accesseur a l&#039;age de la personne. Retourne la valeur de l&#039;age sous forme d&#039;un entier.</dd>
+<dd>getLength permet de conaitre la longeurs d&#039;un segment</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_getFirstName">getFirstName()</a>
+    <a href="classes/Segment.html#method_getStart">getStart()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <a href="classes/Point.html"><abbr title="\Point">Point</abbr></a>    </span>
 </dt>
-<dd>Accesseur au prénom de la personne. Retourne la valeur du prénom sous forme de chaîne de
-caractéres.</dd>
+<dd>getStart permet d&#039;acceder au valeur du point de depart du degement.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_getLastName">getLastName()</a>
+    <a href="classes/Segment.html#method_isEqual">isEqual()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: bool    </span>
 </dt>
-<dd>Accesseur au nom de la personne. Retourne la valeur du nom sous forme de chaîne de
-caractéres.</dd>
+<dd>isEqual permet de voir ci deux segments sont egeaux</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_print">print()</a>
+    <a href="classes/Segment.html#method_isLongerThan">isLongerThan()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: bool    </span>
 </dt>
-<dd>affiche les elt de l&#039;objet</dd>
+<dd>isLongerThan compart la taille d&#039;un segment avec celle d&#039;un autre.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_setAge">setAge()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>modificateur de l&#039;age de la perssone. Ne retourne rien, modifie la valeur age de la personne.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_setFirstName">setFirstName()</a>
+    <a href="classes/Segment.html#method_setStart">setStart()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>modificateur du prenom de la personne. Ne retourne rien, modifie la valeur du prenom
-de la personne</dd>
+<dd>setStart permet de modifier le point de depart du segment.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Person.html#method_setLastName">setLastName()</a>
+    <a href="classes/Segment.html#method_translation">translation()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>modificateur du nom de la personne. Ne retourn rien, modifie la valeur du le nom
-de la personne</dd>
+<dd>translation premet de déplacer les deux point du segment de la même distance</dd>
 
         </dl>
 
@@ -197,8 +193,41 @@ de la personne</dd>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Person.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Segment.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___clone">
+        __clone()
+        <a href="classes/Segment.html#method___clone" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">113</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__clone</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -207,52 +236,38 @@ de la personne</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Person.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Segment.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Constructeur de la classe Person. Ce constructeur permet d’affecter un nom, un prénom
-et un age à une personne. Lorsque ces caractéritiques ne sont pas renseignées lors de
-l’appel du contructeur, la personne aura pour nom &quot;Doe&quot;, prénom &quot;John&quot; et age 0.</p>
+        <p class="phpdocumentor-summary">constructeur de la classe Segment. il attibut les valeur des argument passer en
+parametre au attrubut strat et end.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lastName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;Doe&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;John&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$age</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Point.html"><abbr title="\Point">Point</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Point.html"><abbr title="\Point">Point</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$lastName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&quot;Doe&quot;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>(optional) Nom de la personne</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$firstName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&quot;John&quot;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>(optional) Pr ́enom de la personne</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$age</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                <span class="phpdocumentor-signature__argument__name">$start</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Point.html"><abbr title="\Point">Point</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>(optional) Age de la personne</p>
-</section>
-
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Point.html"><abbr title="\Point">Point</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 
@@ -272,16 +287,17 @@ l’appel du contructeur, la personne aura pour nom &quot;Doe&quot;, prénom &qu
 >
     <h4 class="phpdocumentor-element__name" id="method___toString">
         __toString()
-        <a href="classes/Person.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Segment.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">donne la facon d&#039;interpreter une personne en type string.</p>
+        <p class="phpdocumentor-summary">__toString indique comment interpreter l&#039;instance de Segement l&#039;orcequ&#039;il est
+appeler au format string</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -294,7 +310,7 @@ l’appel du contructeur, la personne aura pour nom &quot;Doe&quot;, prénom &qu
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>le information dans le format pour pouvoir les interpreter en string</p>
+            <section class="phpdocumentor-description"><p>chaine a afficher au format string</p>
 </section>
 
     
@@ -305,31 +321,31 @@ l’appel du contructeur, la personne aura pour nom &quot;Doe&quot;, prénom &qu
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getAge">
-        getAge()
-        <a href="classes/Person.html#method_getAge" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getLength">
+        getLength()
+        <a href="classes/Segment.html#method_getLength" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Accesseur a l&#039;age de la personne. Retourne la valeur de l&#039;age sous forme d&#039;un entier.</p>
+        <p class="phpdocumentor-summary">getLength permet de conaitre la longeurs d&#039;un segment</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getAge</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">getLength</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
+    <span class="phpdocumentor-signature__response_type">float</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>age de la personne</p>
+            <section class="phpdocumentor-description"><p>renvoi la longeur du seement avec un float</p>
 </section>
 
     
@@ -340,137 +356,165 @@ l’appel du contructeur, la personne aura pour nom &quot;Doe&quot;, prénom &qu
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getFirstName">
-        getFirstName()
-        <a href="classes/Person.html#method_getFirstName" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getStart">
+        getStart()
+        <a href="classes/Segment.html#method_getStart" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">getStart permet d&#039;acceder au valeur du point de depart du degement.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getStart</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Point.html"><abbr title="\Point">Point</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/Point.html"><abbr title="\Point">Point</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>copie du point de depart.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isEqual">
+        isEqual()
+        <a href="classes/Segment.html#method_isEqual" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">103</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">isEqual permet de voir ci deux segments sont egeaux</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isEqual</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$segment2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$segment2</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>le segment au quel on compart le segment d'origine</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>renvoi True
+ci le segment d'origine est egale a celui passer
+en parametre et False cinon.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isLongerThan">
+        isLongerThan()
+        <a href="classes/Segment.html#method_isLongerThan" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">87</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">isLongerThan compart la taille d&#039;un segment avec celle d&#039;un autre.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isLongerThan</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$segment2</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$segment2</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>le segment au quel on compart le segment d'origine</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>renvoi True
+ci le segment d'origine est plus grand que celui passer
+en parametre et False cinon.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setStart">
+        setStart()
+        <a href="classes/Segment.html#method_setStart" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Accesseur au prénom de la personne. Retourne la valeur du prénom sous forme de chaîne de
-caractéres.</p>
+        <p class="phpdocumentor-summary">setStart permet de modifier le point de depart du segment.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getFirstName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>prénom de la personne</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getLastName">
-        getLastName()
-        <a href="classes/Person.html#method_getLastName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">43</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Accesseur au nom de la personne. Retourne la valeur du nom sous forme de chaîne de
-caractéres.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getLastName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Nom de la personne</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_print">
-        print()
-        <a href="classes/Person.html#method_print" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">30</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">affiche les elt de l&#039;objet</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">print</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setAge">
-        setAge()
-        <a href="classes/Person.html#method_setAge" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">72</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">modificateur de l&#039;age de la perssone. Ne retourne rien, modifie la valeur age de la personne.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setAge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$age</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setStart</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\point">point</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$age</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                <span class="phpdocumentor-signature__argument__name">$start</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\point">point</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>age de la personne après modification</p>
+                    <section class="phpdocumentor-description"><p>nouveau point de depart.</p>
 </section>
 
             </dd>
@@ -490,79 +534,41 @@ caractéres.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setFirstName">
-        setFirstName()
-        <a href="classes/Person.html#method_setFirstName" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_translation">
+        translation()
+        <a href="classes/Segment.html#method_translation" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="Segment.php"><a href="files/segment.html"><abbr title="Segment.php">Segment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">modificateur du prenom de la personne. Ne retourne rien, modifie la valeur du prenom
-de la personne</p>
+        <p class="phpdocumentor-summary">translation premet de déplacer les deux point du segment de la même distance</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setFirstName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">translation</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$x</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$y</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$firstName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$x</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>prenom de la perssone après modification</p>
+                    <section class="phpdocumentor-description"><p>translation en x</p>
 </section>
 
             </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setLastName">
-        setLastName()
-        <a href="classes/Person.html#method_setLastName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Person.php"><a href="files/person.html"><abbr title="Person.php">Person.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">94</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">modificateur du nom de la personne. Ne retourn rien, modifie la valeur du le nom
-de la personne</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setLastName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lastName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$lastName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$y</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>nom de la personne après modification</p>
+                    <section class="phpdocumentor-description"><p>translation en y</p>
 </section>
 
             </dd>
@@ -654,7 +660,7 @@ de la personne</p>
 </section>
             </div>
         </div>
-        <a href="classes/Person.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Segment.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
